@@ -47,7 +47,7 @@ function floatAdd(addend, augend, length = -1) {
 
     let result = (addend + augend) / m
 
-    return length === -1 ? result : result.toFixed(length)
+    return length === -1 ? result : Number(result.toFixed(length))
 }
 
 export default floatAdd

@@ -16,22 +16,36 @@ const cookie = {
 	},
 
 	set(name, value, expire = -9999){
-		if (expire === -9999) {
-			document.cookie = `${name}=${escape(value)}`
-		} else {
-			let expireTime = this.getExpireTime(expire)
-			let expireDate = new Date()
-			expireDate = expireDate.setTime(expireDate.getTime() + expireTime)
-			name+ "=" + escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
-			document.cookie = `${name}=${escape(value)};expires=${expireDate.toGMTString()}`
+		try {
+			if (expire === -9999) {
+				document.cookie = `${name}=${escape(value)}`
+			} else {
+				let expireTime = this.getExpireTime(expire)
+				let expireDate = new Date()
+				expireDate = expireDate.setTime(expireDate.getTime() + expireTime)
+				name+ "=" + escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+				document.cookie = `${name}=${escape(value)};expires=${expireDate.toGMTString()}`
+			}
+			return true
+		} catch(e) {
+			console.error(e)
+			return false
 		}
+		
 	},
 
 	remove(name){
-		var expireDate = new Date()
-		expireDate.setTime(expireDate.getTime() - 1);
-		var value = this.get(name)
-		document.cookie = `${name}=${escape(value)};expires=${expireDate.toGMTString()}`
+		try {
+			var expireDate = new Date()
+			expireDate.setTime(expireDate.getTime() - 1);
+			var value = this.get(name)
+			document.cookie = `${name}=${escape(value)};expires=${expireDate.toGMTString()}`
+			return true
+		} catch(e) {
+			console.error(e)
+			return false
+		}
+		
 	},
 
 	getExpireTime(expire) {

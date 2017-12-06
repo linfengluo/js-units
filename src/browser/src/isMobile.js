@@ -6,7 +6,7 @@
 
 function isMobile() {
 	const ua = navigator.userAgent.toLowerCase()
-	return !!ua.match(/AppleWebKit.*Mobile.*/) || !!ua.match(/AppleWebKit/)
+	return !!ua.match(/applewebkit.*mobile.*/) || !!ua.match(/applewebkit/)
 }
 
 export default isMobile

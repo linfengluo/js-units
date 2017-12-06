@@ -19,8 +19,10 @@ const session = {
 			try {
 				const value = JSON.stringify(data)
         		this.mySession.setItem(name, value)
+        		return true
 	    	} catch(e) {
 	    		console.error(e)
+	    		return false
 	    	}
 		}
 	},
@@ -29,8 +31,10 @@ const session = {
 		if (this.mySession) {
 			try {
         		this.mySession.removeItem(name)
+        		return true
 	    	} catch(e) {
 	    		console.error(e)
+	    		return false
 	    	}
 		}
 	},
@@ -39,8 +43,10 @@ const session = {
 		if (this.mySession) {
 			try {
         		this.mySession.clear()
+        		return true
 	    	} catch(e) {
 	    		console.error(e)
+	    		return false
 	    	}
 		}
 	}

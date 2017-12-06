@@ -19,10 +19,8 @@ const local = {
 			try {
 				const value = JSON.stringify(data)
         		this.myStorage.setItem(name, value)
-        		return true
 	    	} catch(e) {
 	    		console.error(e)	
-	        	return false
 	    	}
 		}
 	},
@@ -31,10 +29,8 @@ const local = {
 		if (this.myStorage) {
 			try {
         		this.myStorage.removeItem(name)
-        		return true
 	    	} catch(e) {
 	    		console.error(e)
-	        	return false
 	    	}
 		}
 	},
@@ -43,10 +39,8 @@ const local = {
 		if (this.myStorage) {
 			try {
         		this.myStorage.clear()
-        		return true
 	    	} catch(e) {
 	    		console.error(e)
-	        	return false
 	    	}
 		}
 	}

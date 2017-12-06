@@ -9,7 +9,7 @@ function getUrlQuerys(url = window.location.href) {
     var query = url.substring(url.lastIndexOf('?') + 1)
     let result = {}
     if (query) {
-        result = JSON.parse(`{${decodeURIComponent(query).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"')}}`)
+        result = JSON.parse(`{"${decodeURIComponent(query).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g, '":"')}"}`)
     }
     return result
 }

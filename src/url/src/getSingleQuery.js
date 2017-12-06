@@ -6,10 +6,10 @@
  * @return {String} 
  */
 
-import getQuery from './getQuery'
+import getUrlQuerys from './getUrlQuerys'
 
 function getSingleQuery(name, url = window.location.href) {
-	let querys = getQuery(url)
+	let querys = getUrlQuerys(url)
 
 	return querys[name] ? querys[name] : null
 }
