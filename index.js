@@ -8,6 +8,8 @@ import {getSingleQuery, getUrlQuerys, stringfyQuerys} from './src/url'
 
 import {getBrowser, getOs, isMobile, isWechat} from './src/browser'
 
+import {formatDate, formatTimestamp} from './src/time'
+
 const myUnits = {
 	isEmail,
 	isIdCard,
@@ -26,7 +28,9 @@ const myUnits = {
 	getBrowser,
 	getOs,
 	isMobile,
-	isWechat
+	isWechat,
+	formatDate,
+	formatTimestamp
 }
 
 export default myUnits
@@ -49,5 +53,7 @@ export {
 	getBrowser,
 	getOs,
 	isMobile,
-	isWechat
+	isWechat,
+	formatDate,
+	formatTimestamp
 }
