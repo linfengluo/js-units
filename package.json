@@ -1,14 +1,14 @@
 {
-  "name": "js-units",
-  "version": "1.0.6",
-  "description": "units",
-  "main": "./index.js",
-  "scripts": {
-    "test": "npm run test"
-  },
-  "keywords": [
-    "units"
-  ],
-  "author": "linfengluo",
-  "license": "MIT"
+    "name": "js-units",
+    "version": "1.0.7",
+    "description": "units",
+    "main": "./index.js",
+    "scripts": {
+        "test": "npm run test"
+    },
+    "keywords": [
+        "units"
+    ],
+    "author": "linfengluo",
+    "license": "MIT"
 }

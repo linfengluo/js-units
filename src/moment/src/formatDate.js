@@ -1,4 +1,10 @@
-
+/**
+ * @desc   格式化时间
+ * @param  {Date | String} date 
+ * @param  {String} format 默认: 'YYYY-MM-DD HH:mm:ss'
+ * @return {String} 
+ */
+ 
 function formatDate(date, format = 'YYYY-MM-DD HH:mm:ss') {
 	let targetDate = null
 
