@@ -25,7 +25,7 @@ function floatMul(multiplier, multiplicand, length = -1) {
 
     let result = Number(s1.replace('.', '')) * Number(s2.replace('.', '')) / Math.pow(10, m)
 
-    return length === -1 ? result : result.toFixed(length)
+    return length === -1 ? result : parseFloat(result.toFixed(length))
 }
 
 export default floatMul

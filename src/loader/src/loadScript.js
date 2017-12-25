@@ -15,12 +15,12 @@ function loadScript(url, callback){
         scriptEle.src = url;
         scriptEle.onreadystatechange = function() {
             if (!scriptEle.onloadDone && (scriptEle.readyState == 'loaded' || scriptEle.readyState == 'complete')) {
-               typeOf callback == 'function' && callback()
+               typeof callback == 'function' && callback()
             }
         }
 
         scriptEle.onload = function() {
-            typeOf callback == 'function' && callback()
+            typeof callback == 'function' && callback()
             scriptEle.onloadDone = true
         }
         

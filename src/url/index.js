@@ -1,9 +1,9 @@
 import getSingleQuery from './src/getSingleQuery'
-import getUrlQuerys from './src/getQuerys'
-import stringfyQuery from './src/stringfyQuerys'
+import getUrlQuerys from './src/getUrlQuerys'
+import stringfyQuerys from './src/stringfyQuerys'
 
 export {
 	getSingleQuery, 
-	getUrlQuerys, 
-	stringfyQuerys
+	getUrlQuerys,
+    stringfyQuerys
 }

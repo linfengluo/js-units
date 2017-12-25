@@ -37,7 +37,7 @@ function floatDiv(divisor, dividend, length = -1) {
 
     let result = (r1 / r2) * Math.pow(10, t2 - t1)
 
-    return length === -1 ? result : result.toFixed(length)
+    return length === -1 ? result : parseFloat(result.toFixed(length))
 }
 
 export default floatDiv

@@ -6,7 +6,6 @@
  * @return {Float} 
  */
 
-
 function floatAdd(addend, augend, length = -1) {
 	addend = isNaN(addend) ? 0 : Number(addend)
 	augend = isNaN(augend) ? 0 : Number(augend)
@@ -47,7 +46,7 @@ function floatAdd(addend, augend, length = -1) {
 
     let result = (addend + augend) / m
 
-    return length === -1 ? result : Number(result.toFixed(length))
+    return length === -1 ? result : parseFloat(result.toFixed(length))
 }
 
 export default floatAdd

@@ -32,7 +32,7 @@ function floatSub(reduction, minuend, length = -1) {
 
     let result = ((reduction * m - minuend * m) / m)
 
-    return length === -1 ? result.toFixed(n) : result.toFixed(length)
+    return length === -1 ? parseFloat(result.toFixed(n)) : parseFloat(result.toFixed(length))
 }
 
 export default floatSub

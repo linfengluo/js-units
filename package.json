@@ -1,6 +1,6 @@
 {
     "name": "js-units",
-    "version": "1.0.7",
+    "version": "1.1.0",
     "description": "units",
     "main": "./index.js",
     "scripts": {
