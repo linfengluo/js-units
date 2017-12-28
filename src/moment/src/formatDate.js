@@ -6,7 +6,7 @@
  */
  
 function formatDate(date, format = 'YYYY-MM-DD HH:mm:ss') {
-	let targetDate = null
+	let targetDate = new Date()
 
 	if (date instanceof Date) {
 		targetDate = date

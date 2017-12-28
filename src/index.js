@@ -1,16 +1,16 @@
-import { isEmail, isIdCard, isUrl, isTel } from './src/regex'
+import { isEmail, isIdCard, isUrl, isTel } from './regex'
 
-import { cookie, localstorage, sessionStorage } from './src/storage'
+import { cookie, localstorage, sessionStorage } from './storage'
 
-import { floatAdd, floatDiv, floatSub, floatMul } from './src/math'
+import { floatAdd, floatDiv, floatSub, floatMul } from './math'
 
-import { getSingleQuery, getUrlQuerys, stringfyQuerys } from './src/url'
+import { getSingleQuery, getUrlQuerys, stringfyQuerys } from './url'
 
-import { getBrowser, getOs, isMobile, isWechat } from './src/browser'
+import { getBrowser, getOs, isMobile, isWechat } from './browser'
 
-import { formatDate, formatTimestamp } from './src/moment'
+import { formatDate, formatTimestamp } from './moment'
 
-import { loadScript, loadStyle } from './src/loader'
+import { loadScript, loadStyle } from './loader'
 
 const myUnits = {
     isEmail,
