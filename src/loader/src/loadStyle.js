@@ -5,7 +5,7 @@
  */
 function loadStyle(url) {
     try {
-        document.createStyleSheet(url)
+      document.createStyleSheet(url)
     } catch(e) {
         let linkEle = document.createElement('link');
         linkEle.rel = 'stylesheet';

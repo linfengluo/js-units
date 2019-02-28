@@ -1,15 +1,24 @@
+import inBrowser from './inBrowser'
+
 /**
  * @desc 获取浏览器类型和版本
  * @return {Object} 
  * reference: https://github.com/proYang/outils/blob/master/src/device/getExplore.js
  */
-
 function getBrowser() {
-	let browser = {
-		name: '',
-		version: ''
+	if (!inBrowser) {
+		return {
+      name: 'undefined',
+      version: null
+    }
 	}
-	let matchResult = null
+  
+  let browser = {
+    name: '',
+    version: ''
+  }
+  
+  let matchResult
 	const ua = navigator.userAgent.toLowerCase()
 
 	if (matchResult = ua.match(/rv:([\d.]+)\) like gecko/)) {
